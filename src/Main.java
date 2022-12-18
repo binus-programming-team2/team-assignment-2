@@ -40,7 +40,7 @@ public class Main {
         System.out.print("Masukkan Nama Anda [1..25] : ");
         String name = input.nextLine();
 
-        if(name.length() < 1 && name.length() > 25) {
+        if(name.length() < 1 || name.length() > 25) {
             System.out.println("Nama yang anda masukkan harus terdiri dari 1 - 25 angka.");
             nameInput(input);
         }
@@ -64,9 +64,9 @@ public class Main {
         System.out.print("\nMasukkan Sembarang Angka [5..20] : ");
         int number = input.nextInt();
 
-        if(number < 5 && number > 20) {
+        if(number < 5 || number > 20) {
             System.out.println("Angka yang anda masukkan harus diantara rentang angka 5 - 20");
-            inputNumber(input);
+            number = inputNumber(input);
         }
 
         return number;
