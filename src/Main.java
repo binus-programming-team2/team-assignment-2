@@ -42,7 +42,7 @@ public class Main {
 
         if(name.length() < 1 || name.length() > 25) {
             System.out.println("Nama yang anda masukkan harus terdiri dari 1 - 25 angka.");
-            nameInput(input);
+            name = nameInput(input);
         }
 
         return name;
@@ -54,7 +54,7 @@ public class Main {
 
         if(nim.length() != 10) {
             System.out.println("NIM yang anda masukkan harus terdiri dari 10 karakter");
-            nimInput(input);
+            nim = nimInput(input);
         }
 
         return nim;
